@@ -14,7 +14,9 @@ jobs:
     uses: ./.github/workflows/terraform.yaml
     with:
       environment: dev
-      aws-assume-role-arn: "arn:aws:iam::{{ 228016819460 }}:role/{{ gits3fullaccess }}"
+      aws-assume-role-arn: "arn:aws:iam::{{ 228016819460 }}:role/{{ github-actions-aws-pipeline }}"
       aws-region: "us-east-1"
       aws-statefile-s3-bucket: "{{ renato-us-east1-terraform-statefile2026 }}"
       aws-lock-dynamodb-table: "{{ renato-n.virginia-us-east-1-terraform-lock}}"
+
+   
