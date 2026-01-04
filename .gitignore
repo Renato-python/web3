@@ -1,2 +1,5 @@
-.idea
+# Exclude terraform temps files
 .terraform
+terraform.**
+.terraform.**
+.idea
